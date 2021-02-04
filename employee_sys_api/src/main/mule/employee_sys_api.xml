@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="employee_sys_apiFlow" doc:id="8528f8dd-056e-4f6a-82a0-9fc1c9d30c9c" >
 		<http:listener doc:name="Listener" doc:id="857b9b48-bb63-466a-95d8-b1b3c7a21240" path="/employees" config-ref="HTTP_Listener_config"/>
 		<set-payload value="This will give you all Employee Details" doc:name="Set Payload" doc:id="abb4b5c7-f18c-4478-b476-e6527ac9a018" />
+		<logger level="INFO" doc:name="Logger" doc:id="18db91f8-a55c-489f-a8fb-c53c11875136" message="#[payload]"/>
 	</flow>
 </mule>
