@@ -34,6 +34,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <username>atanu_feb</username>
+                        <password>Anypoint#97</password>
+                        <environment>Sandbox</environment>
+                        <muleVersion>4.3.0</muleVersion>
+                        <workers>1</workers>
+                        <workerType>Micro</workerType>
+                        <applicationName>Emp-Sys-Api-Atanu2</applicationName>
+                        <objectStoreV2>true</objectStoreV2>
+                    </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
